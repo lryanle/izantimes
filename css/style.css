@@ -1,15 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 body {
   margin: 0;
   padding: 0;
   background: transparent;
-  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+  font-family: 'Nunito',
+  sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    font-family: "proxima-nova-soft",
-    sans-serif;
     -webkit-user-select: none;
     background: #2c2d44;
 }
