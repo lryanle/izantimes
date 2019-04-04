@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 body {
   margin: 0;
   padding: 0;
   background: transparent;
   text-transform: uppercase;
-  font-family: 'Nunito',
-  sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -webkit-user-select: none;
-    background: #2c2d44;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-user-select: none;
+  background: #2c2d44;
 }
 
 a,
@@ -30,14 +29,12 @@ a:visited {
   overflow: hidden;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06);
   z-index: 3;
-
 }
 
 #header {
   margin: 0;
   padding: 20px 0;
   background: #fdfdfd;
-  
 }
 
 .center {
@@ -87,7 +84,7 @@ a:visited {
 
 #menu span {
   display: table;
-  color: rgba(255, 255, 255, .3);
+  color: rgba(255, 255, 255, 0.3);
   text-align: center;
   margin: auto;
   padding: 20px 0;
@@ -96,7 +93,7 @@ a:visited {
 
 #menu:before {
   position: absolute;
-  content: '';
+  content: "";
   display: inline-block;
   left: 0;
   top: 0;
@@ -109,7 +106,7 @@ a:visited {
 
 #menu:after {
   position: absolute;
-  content: '\f1ea';
+  content: "\f1ea";
   display: inline-block;
   font-family: FontAwesome;
   left: 0;
@@ -139,85 +136,55 @@ a:visited {
 }
 
 .teaser {
-  background-size:cover;
+  background-size: cover;
   height: 170px;
   width: 250px;
 }
 
-#box,
-#box2,
-#box3,
-#box4,
-#box5,
-#box6,
-#box7 {
+.box {
   position: relative;
   height: 170px;
   display: block;
   background: #ecf0f1;
   margin: 0 0 20px 0;
+  display: flex;
 }
 
-#box:last-child {
+.box:last-child {
   margin: 0;
 }
 
-#box:before,
-#box2:before,
-#box3:before,
-#box4:before,
-#box5:before,
-#box6:before,
-#box7:before {
-  position: absolute;
-  content: '';
-  display: inline-block;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: 170px;
-  width: 250px;
-  margin: 0;
-}
-
-#box:after,
-#box2:after,
-#box3:after,
-#box4:after,
-#box5:after,
-#box6:after,
-#box7:after {
-  position: absolute;
-  content: 'Read \f138';
+.box:after {
+  content: "Read \f138";
   font-family: FontAwesome;
-  display: inline-block;
-  left: 0;
-  right: 0;
+  position: absolute;
   top: 0;
+  left: 0;
   bottom: 0;
-  text-align: center;
-  height: 170px;
-  line-height: 170px;
   width: 250px;
-  margin: 0;
-  color: rgba(255, 255, 255, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
   background: rgba(0, 0, 0, 0.4);
   font-size: 50px;
   opacity: 0;
   visibility: hidden;
-  transition: all .6s;
+  transition: all 0.6s;
   z-index: 2;
   cursor: pointer;
 }
 
-#box:hover:after,
-#box2:hover:after,
-#box3:hover:after,
-#box4:hover:after,
-#box5:hover:after,
-#box6:hover:after,
-#box7:hover:after {
+.teaserdescription {
+    color: #2c3e50;
+    text-align: left;
+    margin: auto;
+    width: 55%;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.box:hover:after {
   opacity: 1;
   visibility: visible;
 }
@@ -241,7 +208,7 @@ a:visited {
 
 #sidecontent2 span {
   position: absolute;
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, 0.75);
   text-align: center;
   margin: auto;
   font-size: 25px;
@@ -285,7 +252,7 @@ a:visited {
   float: left;
   margin: 10px;
   background: #34495e;
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 #footer-wrapper .boxi:hover {
@@ -299,7 +266,7 @@ a:visited {
 
 #credit span {
   display: table;
-  color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
   font-size: 16px;
   line-height: 80px;
@@ -332,12 +299,12 @@ a:visited {
   opacity: 0;
   border-radius: 3px;
   -webkit-transform: translateZ(0);
-  transition: all .4s
+  transition: all 0.4s;
 }
 
 .back-to-top .fa {
   font-size: 22px;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .back-to-top:hover {
