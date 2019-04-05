@@ -73,7 +73,6 @@ a:visited {
 }
 
 #menu {
-  position: absolute;
   width: 100%;
   max-width: 920px;
   height: 60px;
@@ -87,8 +86,8 @@ a:visited {
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
   margin: auto;
-  padding: 20px 0;
-  font-size: 20px;
+  padding: 20px;
+  font-size: 18px;
 }
 
 #menu:before {
@@ -177,10 +176,10 @@ a:visited {
 
 .teaserdescription {
     color: #2c3e50;
-    text-align: left;
+    text-align: center;
     margin: auto;
     width: 55%;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
 }
 
